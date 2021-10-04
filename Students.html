@@ -1,0 +1,81 @@
+<html>
+
+<head>
+   <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+   <link href="{{url_for('static', filename='stylesheet.css')}}" rel="stylesheet">
+   <script src="{{url_for('static', filename='bootstrap.min.js')}}" ></script>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light justify-content-between shadow p-4 mb-3 navbar-fixed-top">
+        <div class="container-fluid">
+            <div style="margin-left: 20px;">
+                <a class="navbar-brand" href="#">Students</a>
+            </div>
+            <div class="navbar-nav" style="margin-right: 20px;">
+                <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-item nav-link" href="{{ url_for('institute') }}">Institutions</a>
+                <a class="nav-item nav-link " href="{{ url_for('courses') }}">Courses</a>
+                <a class="nav-item nav-link active" href="{{ url_for('student') }}">Students</a>
+                <a class="nav-item nav-link" href="{{ url_for('faculty') }}">Faculty</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    
+     
+      
+
+    <section class="container-fluid row" style="justify-content: center;">
+      {%for i in range(0, len)%}
+      <div class="card shadow card-custom">
+         <div class="bg-image hover-zoom">
+             <img style="width:100%;" src="{{studentlist[i][0]}}" alt="Student 1" /><br />
+         </div>
+         <div style="margin: 10px;margin-top: 18px;">
+             <h4>{{studentlist[i][1]}}</h4>
+             <p>{{studentlist[i][2]}}</p>
+         </div>
+      </div>
+      {%endfor%}
+    </section>
+    
+
+
+
+
+
+
+    <div class="container">
+        <h2> Online Exploration  </h2>
+          <p style="text-align:justify">
+
+            Exploration activities help students make discoveries related to the lesson's Big Idea(s). They promote inquiry and lead students toward asking the essential questions. Well designed exploration activities give students the opportunity to experience, think, investigate, probe, inquire, collect information, question, test, make inferences about relationships and problem solve. They promote a sort of "academic play",  a chance to muck-about in learning.
+      </div>
+      <div class="container">
+        <h2> Technology  </h2>
+          <p style="text-align:justify">
+
+            Technology is the application of scientific knowledge to human life. It involves using machines, tools, methods, systems and procedures to solve problems. In addition to humans, other species of animals, such as apes and dolphins, utilize technology and transfer this knowledge from generation to generation. Technology has an immense influence on the development of human society; there are various and conflicting opinions regarding the role and limits of technology.
+            
+      </div>
+
+    <!-- Footer -->
+    <footer class="foot justify-content-between">
+      <h6 style="padding-bottom:10px;">                           </h6>
+      
+        <ul>
+            <a href=""><img style="background-color: white;" src="/static/icons/twitter.png"/></a>
+            <a href=""><img style="background-color: #ddd;" src="/static/icons/instagram.jpg"/></a>
+            <a href=""><img style="background-color: #ddd;" src="/static/icons/facebook.png"/></a>
+            <a href=""><img style="background-color: #ddd;" src="/static/icons/linked.jpg"/></a>
+
+        </ul>
+       
+    </footer>
+</body>  
+
+</html>

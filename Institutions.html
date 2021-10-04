@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='stylesheet.css')}}" rel="stylesheet">
+  <script src="{{url_for('static', filename='bootstrap.min.js')}}" ></script>
+</head>
+
+<header>
+  <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light justify-content-between shadow p-4 mb-3 navbar-fixed-top">
+    <div class="container-fluid">
+        <div style="margin-left: 20px;">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Online Education Redefined</a>
+        </div>
+        <div class="navbar-nav" style="margin-right: 20px;">
+            <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-item nav-link active" href="{{ url_for('institute') }}">Institutions</a>
+            <a class="nav-item nav-link " href="{{ url_for('courses') }}">Courses</a>
+            <a class="nav-item nav-link" href="{{ url_for('student') }}">Students</a>
+            <a class="nav-item nav-link" href="{{ url_for('faculty') }}">Faculty</a>
+        </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container" style="text-align: justify;">
+    <div class="container" style="text-align: justify;">
+      <h2> Partcipating Institutes </h2>
+          Through this Online learning  platform, we have colloborated with world renowned educational
+          Instituitions to bring their expertise to the learning aspirants across the globe.
+    </div>
+    <div class="container">
+      <h2> Engineering Instituitions</h2>
+      <ul>
+        <li>MIT </li>
+        <li>Stanford University </li>
+        <li>IIT Bombay</li>
+        <li>IIT Chennai</li>
+        <li>IIT Kanpur</li>
+        <li>IIT Kharagpur</li>
+        <li>IIT Delhi</li>
+      </ul>
+    </div>
+    <div class="w3-container">
+      <h2> Career-relevant Programs </h2>
+      <ul>
+        <li>Full Stack Programming</li>
+        <li>Data Science Programming</li>
+        <li> Block Chain Programming</li>
+        <li> Quantum Computing</li>
+      </ul>
+    </div>
+</div>   
+
+<!-- Footer -->
+<footer class="foot justify-content-between">
+  <h6 style="padding-top:10px;">                                               </h6>
+  
+    <ul>
+        <a href=""><img style="background-color: white;" src="/static/icons/twitter.png"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/instagram.jpg"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/facebook.png"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/linked.jpg"/></a>
+    </ul>
+   
+</footer>
+
+</body>
+</html>

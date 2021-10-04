@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='stylesheet.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}" ></script>
+  </head>
+<body>
+<header>
+  <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light justify-content-between shadow p-4 mb-3 navbar-fixed-top">
+    <div class="container-fluid">
+        <div style="margin-left: 20px;">
+          <a class="navbar-brand" href="#">Welcome to Life Long Education</a>
+        </div>
+        <div class="navbar-nav" style="margin-right: 20px;">
+            <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-item nav-link" href="{{ url_for('institute') }}">Institutions</a>
+            <a class="nav-item nav-link " href="{{ url_for('courses') }}">Courses</a>
+            <a class="nav-item nav-link" href="{{ url_for('student') }}">Students</a>
+            <a class="nav-item nav-link" href="{{ url_for('faculty') }}">Faculty</a>
+        </div>
+    </div>
+  </nav>
+</header> 
+    
+    <div class="container">
+      <h2> Online Education </h2>
+        <p style="text-align:justify">
+            Online learning has become an integral component of higher education, 
+            as is evident by the steady emergence and growth of online course offerings and 
+            online academic and professional degree programs. In most fields and disciplines,
+            students can take advantage of a broad range of online learning opportunities, 
+            from individual online courses to fully online undergraduate, certificate, 
+            and graduate programs. However, choosing from among the many options for
+            advancing one’s academic and career goals through an online program can be a challenge.
+        </p>
+    </div>
+    <div class="container" style="text-align: justify;">
+      <h2> Exceptional flexibility </h2>
+        <ul>
+          <li>Online classes, always on – 24/7/365. </li>
+          <li>Highly rated 1-on-1 support, available 20 hours a day, 5 days a week.</li>
+          <li> Start your degree when you’re ready, with up to 18 opportunities a year.</li>
+        </ul>
+    </div>
+    <div class="container">
+      <h2> Career-relevant education </h2>
+      <ul style="text-align: justify;">
+        <li> More than 100 online programs aligned to 300+ real-world occupations.</li>
+        <li>Career Services for Life™. While outside career advising can cost over $200/hour, we’ve built it right into your degree at no added cost, for life.</li>
+        <li>Our instructors are accomplished professionals who average 26+ years of experience. And over 85% of our students would recommend their instructors to others.</li>
+      </ul>
+    </div>
+    
+
+
+    
+<!-- Footer -->
+<footer class="foot justify-content-between">
+  <h6 style="padding-top:10px;">                      </h6>
+  
+    <ul>
+        <a href=""><img style="background-color: white;" src="/static/icons/twitter.png"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/instagram.jpg"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/facebook.png"/></a>
+        <a href=""><img style="background-color: #ddd;" src="/static/icons/linked.jpg"/></a>
+    </ul>
+   
+</footer>
+
+</body>
+</html>
